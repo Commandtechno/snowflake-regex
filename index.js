@@ -21,7 +21,7 @@ function generate(
   if (exact) res = "^" + res + "$";
   if (global) flags += "g";
   if (multiline) flags += "m";
-  return new RegExp(regex, flags);
+  return new RegExp(res, flags);
 }
 
 module.exports = generate();
