@@ -1,0 +1,31 @@
+{
+  "name": "snowflake-regex",
+  "version": "1.0.3",
+  "description": "Generates a regex to match Discord snowflakes",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/commandtechno/snowflake.git"
+  },
+  "keywords": [
+    "discord",
+    "snowflake",
+    "regex",
+    "discord.js",
+    "discord",
+    "snowflake"
+  ],
+  "author": "Commandtechno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/commandtechno/snowflake/issues"
+  },
+  "homepage": "https://github.com/commandtechno/snowflake#readme",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
+}
