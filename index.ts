@@ -1,12 +1,4 @@
-const now = Date.now();
-const epoch = 1420070400000n;
-const distance = BigInt(now) - epoch;
-const snowflake = (distance << 22n) | (1n << 17n) | (1n << 12n);
-
-const min = 17;
-const max = snowflake.toString().length;
-const int = "\\d";
-const baseRegex = int + "{" + [min, max] + "}";
+export const EPOCH = 1420070400000n;
 
 export interface Options {
   exact?: boolean;
@@ -21,7 +13,13 @@ export function generate(
     multiline: true
   }
 ) {
-  let regex = baseRegex;
+  const distance = BigInt(Date.now()) - EPOCH;
+  const snowflake = (distance << 22n) | (1n << 17n) | (1n << 12n);
+
+  const min = 17;
+  const max = snowflake.toString().length;
+
+  let regex = "\\d{" + [min, max] + "}";
   let flags = "";
 
   if (exact) regex = "^" + regex + "$";

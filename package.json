@@ -1,6 +1,6 @@
 {
   "name": "snowflake-regex",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generates a regex to match Discord snowflakes",
   "main": "index.js",
   "scripts": {
